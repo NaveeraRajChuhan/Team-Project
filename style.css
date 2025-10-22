@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 .main{
     margin-bottom: 100px;
@@ -24,30 +25,172 @@ color: #e67e20;
 cursor: pointer;
 }
 
+/* ----------------------------------------------------------sec1------------------------------ */
+
 .sec1{
 background-color: rgb(43, 43, 116);
 width: 100%;
 height: 140vh;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
 }
 .sec1-nav{
 background-color: aqua;
 width: 100%;
 height: 20vh;
-;
+
+}
+
+
+.sec1-left{
+    color: white;
+    margin-left: 20px;
+    background-color: rgb(17, 73, 73);
+    width: 40%;
+}
+
+/* ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+} */
+
+.sec1-pawwrap{
+   
+    display: flex;
+}
+.sec1-paw{
+ font-size: 15px;
+ margin-right: 15px;
+}
+
+
+/* ------------------------------------------------sec1-right----------------------------- */
+
+
+
+
+
+.sec1-right{
+    width: 49%;
+    background-color: rgb(15, 155, 34);
+}
+/* body {
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+
+.consultation-card {
+  background-color: #f5821f;
+  color: #fff;
+  border-radius: 40px;
+  padding: 40px;
+  width:100%;
+  /* max-width: 95%; */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.dog-icon {
+  width: 70px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.header h2 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.consultation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+input, select {
+  padding: 20px 16px;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+.btn-submit {
+  margin-top: 10px;
+  width: 100%;
+  background: #3e2c26;
+  border: none;
+  color: #fff;
+  padding: 14px;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: #2d1e19;
 }
 
 
 
 
 
+/* ------------------------------------------media quary/responsive------------------ */
+/* ------------------------------------------media quary/responsive------------------ */
 
+@media (max-width: 600px) {
+  .consultation-card {
+    width: 90%;
+    padding: 25px;
+  }
 
+  .header h2 {
+    font-size: 1.5rem;
+  }
 
-
-
-
-
-
+  .form-row {
+    flex-direction: column;
+  }
+}
 
 
 
@@ -163,3 +306,13 @@ body {
 
 
  */
+
+
+
+
+
+
+
+
+
+
