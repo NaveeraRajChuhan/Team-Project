@@ -43,6 +43,9 @@ height: 20vh;
 }
 
 
+
+
+
 .sec1-left{
     color: white;
     margin-left: 20px;
@@ -175,7 +178,9 @@ input::placeholder {
 }
 
 .btn-submit:hover {
-  background: #2d1e19;
+  background: white;
+  cursor: pointer;
+  color: #3e2c26;
 }
 
 

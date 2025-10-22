@@ -2,3 +2,19 @@ document.getElementById("appointmentForm").addEventListener("submit", function (
   e.preventDefault();
   alert("Your appointment has been booked successfully!");
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
