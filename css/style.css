@@ -6,6 +6,8 @@
 }
 .main{
     margin-bottom: 100px;
+   /* margin: 0px 100px; */
+   /* width: 100%; */
 }
 .UpperNav{
     justify-content: space-around;
