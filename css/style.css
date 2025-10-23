@@ -46,8 +46,8 @@ align-items: center;
 
 }
 
-.sec1-nav-left{
-  width: 200px;
+.sec1-navimg{
+  width: 170px;
   background-color: orangered;
   height: 100px;
   margin-left: 20px;
@@ -67,6 +67,26 @@ align-items: center;
     display: flex;
     gap: 30px;
 } */
+
+.sec1-nav-mid{
+  /* justify-content: space-evenly; */
+  /* gap: 30px; */
+  display: flex;
+  align-items: center;
+  margin: 0 120px 0 90px;
+  /* background-color: red; */
+  background-color: #505050;
+
+  border-radius: 30px;
+  padding: 10px 0;
+  width:500px ;
+
+  /* background-color: rgba(var(--wdtAccentTxtColorRgb), .1); */
+    backdrop-filter: blur(20px);
+    /* border-radius: var(--wdtRadius_Part); */
+    /* padding: 10px 15px; */
+}
+
 
 .sec1-pawwrap{
    
