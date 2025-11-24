@@ -1,0 +1,9 @@
+
+.wdt-elementor-repeater-container-wrapper { margin: 0px; display: flex; align-items: center; flex-wrap: nowrap; }
+.wdt-elementor-repeater-container-wrapper > div { margin: 12px; line-height: 1em; display: inline-block; vertical-align: middle; }
+
+.wdt-elementor-repeater-container-wrapper > .wdt-opt-image img { object-fit: cover; }
+
+.wdt-elementor-repeater-container-wrapper > .wdt-opt-icon { display: inline-flex; align-items: center; justify-content: center; }
+.wdt-elementor-repeater-container-wrapper > .wdt-opt-icon svg { width: 1em; height: 1em; fill: currentColor; }
+.wdt-elementor-repeater-container-wrapper > .wdt-text-tile { color: var(--wdtHeadAltColor); font-weight: var(--wdtFontWeight_H1); line-height: var(--wdtLineHeight_H1); margin: 0; }
