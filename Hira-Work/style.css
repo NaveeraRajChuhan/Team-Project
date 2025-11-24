@@ -1,0 +1,128 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Top Navbar */
+.top-navbar {
+  background-color: #f76666;
+  color: #fff;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.top-nav-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-navbar .social-icons a {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.top-navbar .top-text {
+  font-size: 14px;
+}
+
+.top-navbar .email {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+/* Center Navbar */
+.center-navbar {
+  background-color: #fff;
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.center-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.center-navbar .logo img {
+  height: 50px;
+}
+
+.center-navbar .search-bar {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin: 0 20px;
+}
+
+.center-navbar .search-bar input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+}
+
+.center-navbar .search-bar button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #19202d;
+  color: #fff;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+}
+
+.center-navbar .nav-icons a {
+  margin: 0 8px;
+  color: #19202d;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.center-navbar .contact-btn {
+  background-color: #19202d;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.center-navbar .hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .center-nav-container {
+    flex-wrap: wrap;
+  }
+  .search-bar {
+    order: 3;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .nav-icons, .contact-btn {
+    order: 2;
+    margin: 10px 0;
+  }
+  .hamburger {
+    display: block;
+    order: 1;
+  }
+}
