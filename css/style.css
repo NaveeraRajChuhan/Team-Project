@@ -4,8 +4,15 @@
     box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
+
+body {
+  background: #faf7f2;
+  font-family: 'Segoe UI', sans-serif;
+}
+
 .main{
     margin-bottom: 100px;
+    /* margin: 0px 20px 100px 20px; */
    /* margin: 0px 100px; */
    /* width: 100%; */
 }
@@ -43,6 +50,7 @@ width: 100%;
 height: 20vh;
 display: flex;
 align-items: center;
+border-radius: 30px 30px 0px 0px;
 
 }
 
@@ -74,6 +82,7 @@ align-items: center;
   display: flex;
   align-items: center;
   margin: 0 120px 0 90px;
+  /* color: white; */
   /* background-color: red; */
   background-color: #505050;
 
@@ -87,6 +96,9 @@ align-items: center;
     /* padding: 10px 15px; */
 }
 
+/* a{
+  color: white;
+} */
 
 .sec1-pawwrap{
    
@@ -110,11 +122,11 @@ align-items: center;
 
 
 
-
-
 .sec1-right{
     width: 49%;
     background-color: rgb(15, 155, 34);
+    margin-right: 20px;
+
 }
 /* body {
   background: #f0f0f0;
@@ -231,12 +243,544 @@ input::placeholder {
   color: #3e2c26;
 }
 
+/* ----------------------------------------------------------sec6------------------------------ */
+
+/* SALE CARD */
+.sale-card {
+  background: #f7c948;
+  border-radius: 35px;
+  padding: 40px 30px;
+  height: 100%;
+}
+
+.sale-card h1 {
+  font-weight: 800;
+  font-size: 48px;
+}
+
+.sale-card h4 {
+  margin: 15px 0;
+  font-weight: 700;
+}
+
+.sale-card p {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.sale-card img {
+  width: 100%;
+  max-width: 280px;
+}
+
+/* PRODUCT CARD */
+.product-card {
+  background: #fff;
+  border-radius: 30px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  position: relative;
+}
+
+.product-card img {
+  width: 80px;
+}
+
+.stars {
+  color: #ffb703;
+  font-size: 18px;
+}
+
+.product-card h5 {
+  margin: 5px 0;
+  font-weight: 700;
+}
+
+.price {
+  margin: 0;
+  font-weight: 600;
+  color: #555;
+}
+
+/* CART BUTTON */
+.cart-btn {
+  position: absolute;
+  right: 20px;
+  background: #f28c28;
+  border: none;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+
+/* ------------------UNIQUE CARD WITH EXPANDING YELLOW CIRCLE */
+
+.unique-card {
+  position: relative;
+  background-color: #f8f9fa; /* Initial light color */
+  border-radius: 20px;
+  overflow: hidden;
+  border: none;
+  transition: color 0.4s ease;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* The Yellow Layer */
+.unique-card::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffcc00; /* The yellow from your image */
+  z-index: -1;
+  
+  /* Start as a tiny circle in the bottom-right corner */
+  clip-path: circle(0% at 100% 100%);
+  transition: clip-path 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Hover Effect: Expand the circle to cover the whole div */
+.unique-card:hover::before {
+  clip-path: circle(150% at 100% 100%);
+}
+
+/* Adjust text color on hover if needed */
+.unique-card:hover {
+  color: #333;
+}
+
+.sale-title {
+  font-weight: 800;
+  font-size: 2.5rem;
+}
 
 
 
+/*---------------------------------- marquee--------- */
+
+.marquee-container {
+  background-color: #f38321; /* Match the orange in the image */
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  cursor: none; /* Hide default cursor to use the circle image */
+  transform: skewY(-1deg); /* Unique tilt graphics */
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: scroll-left 20s linear infinite;
+}
+
+.marquee-content span {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 3rem;
+  color: white;
+  text-transform: uppercase;
+  padding-right: 50px;
+}
+
+/* The Circle Follower */
+.hover-circle {
+  position: fixed; /* Fixed to follow mouse easily */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  pointer-events: none; /* Ensures it doesn't block hover events */
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.3s, transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 100;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+}
+
+.hover-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Show circle only on hover */
+.marquee-container:hover .hover-circle {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------sec10------------------------------ */
+
+
+ :root {
+            --primary-orange: #e67e22;
+            --bg-cream: #fdf8f0;
+            --text-dark: #333;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            padding: 50px 0;
+        }
+
+        /* The Main Card */
+        .custom-card {
+          margin-top: 50px;
+            background-color: #fff;
+            /* background-color: purple; */
+            border-radius: 30px;
+            overflow: hidden;
+            position: relative;
+            border: none;
+            transition: transform 0.3s ease;
+            z-index: 1;
+            min-height: 250px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* The Magic Color Fill Overlay */
+        .custom-card::before {
+            content: "";
+            position: absolute;
+            bottom: -10%;
+            right: -10%;
+            width: 0;
+            height: 0;
+            background-color: var(--primary-orange);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            border-radius: 50% 0 0 0; /* Curves the filling shape */
+            z-index: -1;
+        }
+
+        .custom-card:hover::before {
+            width: 150%;
+            height: 150%;
+            bottom: 0;
+            right: 0;
+            border-radius: 0;
+        }
+
+        /* Content Styling */
+        .card-img-side {
+            width: 40%;
+            object-fit: cover;
+        }
+
+        .card-body-content {
+          /* background-color: blue; */
+            width: 60%;
+            padding: 30px;
+            position: relative;
+            transition: color 0.4s ease;
+        }
+
+        .custom-card:hover .card-body-content,
+        .custom-card:hover .card-title,
+        .custom-card:hover .card-text {
+            color: white !important;
+        }
+
+        /* The Date Badge */
+        .date-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--primary-orange);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            line-height: 1;
+            z-index: 2;
+        }
+
+        /* The Right Bottom Curve & Button */
+        .bottom-curve-container {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 80px;
+            height: 80px;
+            background-color: #fff; /* Matches card bg */
+            border-radius: 40px 0 0 0; /* Creates the inverse curve */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.4s ease;
+        }
+
+        .custom-card:hover .bottom-curve-container {
+            background-color: transparent; /* Makes it look seamless when orange */
+        }
+
+        /* The Circle Arrow Button */
+        .btn-circle {
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-orange);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: all 0.4s ease;
+            text-decoration: none;
+        }
+
+        .btn-circle i {
+            transform: rotate(0deg);
+            transition: transform 0.4s ease;
+        }
+
+        /* Hover Animations */
+        .custom-card:hover .btn-circle {
+            background-color: #333; /* Darker circle on hover */
+        }
+
+        .custom-card:hover .btn-circle i {
+            transform: rotate(-45deg) translateY(-2px); /* Moves arrow up-right */
+        }
+
+        /* Text Styles */
+        .card-title {
+            font-weight: 800;
+            font-size: 1.25rem;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+/* <!-- new------------------------------------------ --> */
+
+  :root {
+            --primary-orange: #e67e22;
+            --dark-btn: #3e3731;
+            --bg-cream: #fdf8f0;
+        }
+
+        body {
+            background-color: var(--bg-cream);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 80px 0;
+        }
+
+        /* Header Styles */
+        .section-tag { color: var(--primary-orange); font-weight: bold; font-size: 0.9rem; text-transform: uppercase; }
+        .main-title { font-weight: 800; color: #3e3731; max-width: 500px; }
+        .explore-link { color: var(--primary-orange); text-decoration: none; font-weight: bold; }
+
+        /* Gallery Container */
+        .gallery-wrapper {
+            position: relative;
+            padding: 40px 0;
+        }
+
+        .image-container {
+            display: flex;
+            gap: 20px;
+            overflow-x: hidden; /* Hide scrollbar */
+            scroll-behavior: smooth;
+            padding: 10px;
+        }
+
+        .gallery-item {
+            min-width: 250px;
+            height: 300px;
+            border-radius: 30px;
+            object-fit: cover;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Navigation Buttons */
+        .nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.4s ease;
+            border: none;
+            color: white;
+        }
+
+        .btn-left { left: 20px; background-color: var(--primary-orange); }
+        .btn-right { right: 20px; background-color: var(--dark-btn); }
+
+        /* Hover States for Buttons */
+        .btn-left:hover { background-color: var(--dark-btn); }
+        .btn-right:hover { background-color: var(--primary-orange); }
+
+        /* Arrow Animation: Move up on hover */
+        .nav-btn i {
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .nav-btn:hover i {
+            transform: translateY(-5px) scale(1.1);
+        }
+
+        /* Specific rotation for arrows to match your image */
+        .btn-left i { transform: rotate(0deg); }
+        .btn-right i { transform: rotate(0deg); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+/* <!-- -----------------------------------------------------wheel---------------------- --> */
+
+        .wheel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.rotating-wheel {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #ffde59; /* The yellow circle background */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Continuous Rotation Animation */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.rotating-wheel svg {
+    animation: spin 10s linear infinite;
+    width: 100%;
+    height: 100%;
+}
+
+.wheel-text {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    fill: #222;
+}
+
+/* Hover Effect: Speed up and scale */
+.rotating-wheel:hover {
+    transform: scale(1.1);
+    background-color: #ffd000;
+}
+
+.rotating-wheel:hover svg {
+    animation-duration: 5s; /* Spins faster on hover */
+}
+
+.center-dot {
+    /* Optional: pulsing effect for the center */
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% { r: 28; opacity: 0.8; }
+    50% { r: 32; opacity: 1; }
+    100% { r: 28; opacity: 0.8; }
+}
 
 /* ------------------------------------------media quary/responsive------------------ */
 /* ------------------------------------------media quary/responsive------------------ */
+
+
+/* ------sec6---------------------- */
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .product-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cart-btn {
+    position: static;
+    margin-top: 15px;
+  }
+}
+
+
+
+
+
+
+
 
 @media (max-width: 600px) {
   .consultation-card {
@@ -252,13 +796,6 @@ input::placeholder {
     flex-direction: column;
   }
 }
-
-
-
-
-
-
-
 
 
 
