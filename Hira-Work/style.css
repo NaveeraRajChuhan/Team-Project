@@ -105,8 +105,8 @@
   font-size: 24px;
   cursor: pointer;
 }
-/* Hero Section */
-.hero-sec {
+ /* Hero Section */
+ .hero-sec {
   width: 100%;
   height: auto;
 }
@@ -115,6 +115,7 @@
   width: 100%;
   height: auto;
 }
+
 
 
 
